@@ -8,6 +8,12 @@
     "jsx": "react-jsx",
     "allowJs": true,
 
+    // Path aliases
+    "baseUrl": "../..",
+    "paths": {
+      "@/*": ["./*"]
+    },
+
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -25,5 +31,9 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false
-  }
+  },
+  "include": [
+    "**/*.ts",
+    "types/**/*.d.ts"
+  ]
 }
